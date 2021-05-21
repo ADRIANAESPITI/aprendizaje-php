@@ -1,0 +1,113 @@
+h1 {
+    text-align: center;
+    font-size: 197%;
+    color: rgb(182, 45, 51);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(223, 239, 248);
+}
+
+
+/* configuracion de la tabla */
+
+td {
+    text-align: center;
+    border: 1px black dotted;
+}
+
+table .sin {
+    border: 0;
+}
+
+table .bot {
+    padding: 0 5px;
+    border: 0;
+}
+
+
+/* encabezado de la tabla */
+
+table .encabezado {
+    font-size: 1.5em;
+    background-color: rgb(86, 140, 209);
+    color: beige;
+}
+
+
+/* alineacion de cursor en el texbox de la tabla */
+
+.centrado {
+    text-align: center;
+}
+
+
+/* estructura responsiva sin flexbox */
+
+.responsive-banner {
+    margin: 80px auto;
+    width: 40%;
+    min-width: 1000px;
+    max-width: 330px;
+    position: relative;
+    height: auto;
+    min-height: 200px;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #6770ee, #8a9fe7);
+}
+
+
+/* mostrar imagen crud del banner */
+
+img {
+    max-width: 330px;
+    width: 100%;
+    position: center;
+}
+
+
+/* mostrar circulos internos del banner */
+
+span:after,
+span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+}
+
+
+/* mostrar tamaño y posicion de circulos internos del banner */
+
+.circle-a:before {
+    width: 500px;
+    height: 500px;
+    top: -300px;
+    left: 52%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.circle-a:after {
+    top: 160px;
+    right: 10%;
+}
+
+.circle-b:before {
+    top: 60%;
+    left: -25px;
+}
+
+.circle-b:after {
+    width: 150px;
+    height: 150px;
+    bottom: -70px;
+    right: -70px;
+}
